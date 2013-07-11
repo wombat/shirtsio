@@ -24,6 +24,7 @@ class Shirtsio::DSL
   ORDER = [
     :test,
     :price,
+    :design,
     :print_type,
     :extra_screens,
     :ship_type,
