@@ -23,7 +23,9 @@ module Shirtsio
         request.url "#{endpoint}#{path}", options
         request.body = options
         request.headers = headers
+        puts CGI.unescape(request.params.to_query)
       end
+      puts response.to_yaml
       Shirtsio::Utils.handle_api_error(response) if response.status != 200
 
       Shirtsio::Utils.parse_json(response.body)[:result]
