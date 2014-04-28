@@ -2,6 +2,7 @@ class Shirtsio::DSL
   SIZES = [:xxsml, :xsml, :sml, :med, :lrg, :xlg, :xxl, :xxxl, :xxxxl, :xxxxxl, :xxxxxxl]
 
   QUOTE = [
+    :test,
     :print_type,
     :personalization,
     :address_count,
